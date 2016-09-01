@@ -1,0 +1,33 @@
+.sec-ui-panel {
+  border: solid 1px #cacaca;
+}
+
+.sec-ui-panel-header {
+  border-bottom: solid 1px #cacaca;
+  background-color: #f2f2f2;
+  padding: 12px 16px;
+}
+
+.sec-ui-panel-header-icon {
+  font-size: 25px !important;
+}
+
+.sec-ui-panel-header-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+.sec-ui-panel-body {
+  background-color: #fff;
+  padding: 12px 16px;
+}
+
+.sec-ui-panel-footer {
+  border-top: solid 1px #cacaca;
+  background-color: #f2f2f2;
+  padding: 12px 16px 12px 176px;
+}

@@ -1,0 +1,32 @@
+.sec-ui-form-row {
+  padding: 10px 0px;
+}
+
+.sec-ui-form-row-label {
+  display: inline-block;
+  width: 130px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.sec-ui-form-row-field {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.sec-ui-form-row-field-required {
+  position: absolute;
+  top: 7px;
+  margin-left: -13px;
+  color: #f00;
+  font-size: 22px;
+}
+
+.sec-ui-form-row-error-message {
+  color: #d44d24;
+  display: block;
+  font-size: 11px;
+  margin-left: 160px;
+  margin-top: 2px;
+}

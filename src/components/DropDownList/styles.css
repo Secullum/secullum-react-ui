@@ -1,0 +1,18 @@
+.sec-ui-drop-down-list {
+  color: #333;
+  border: solid 1px #cacaca;
+  background-color: #fcfcfc;
+  height: 30px;
+  line-height: 18px;
+  padding: 4px;
+}
+
+.sec-ui-drop-down-list:focus {
+  background-color: #fff;
+  border: solid 1px #82878c;
+  outline: none;
+}
+
+.sec-ui-drop-down-list.sec-ui-drop-down-list-error {
+  border: solid 1px #e48c85;
+}

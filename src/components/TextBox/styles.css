@@ -1,0 +1,18 @@
+.sec-ui-text-box {
+  color: #333;
+  border: solid 1px #cacaca;
+  background-color: #fcfcfc;
+  height: 30px;
+  line-height: 18px;
+  padding: 4px;
+}
+
+.sec-ui-text-box:focus {
+  background-color: #fff;
+  border: solid 1px #82878c;
+  outline: none;
+}
+
+.sec-ui-text-box.sec-ui-text-box-error {
+  border: solid 1px #e48c85;
+}

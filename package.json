@@ -1,0 +1,51 @@
+{
+  "name": "secullum-react-ui",
+  "version": "0.0.0",
+  "description": "Set of React components for building user interfaces",
+  "main": "dist/bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Secullum/secullum-react-ui.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "start-storybook -p 9001 -c storybook",
+    "build": "cross-env NODE_ENV=production1 webpack",
+    "lint": "eslint .",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "font-awesome": "^4.6.3"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.6.1",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-latest": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "cross-env": "^2.0.1",
+    "css-loader": "^0.24.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.0",
+    "eslint-plugin-jsx-a11y": "^1.2.0",
+    "eslint-plugin-react": "^5.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
+  },
+  "peerDependencies": {
+    "react": "^0.14 || ^15.0",
+    "react-dom": "^0.14 || ^15.0"
+  }
+}

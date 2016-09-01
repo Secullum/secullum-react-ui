@@ -1,0 +1,40 @@
+.sec-ui-button {
+  background-color: #fcfcfc;
+  border: solid 1px #cacaca;
+  color: #333;
+  height: 40px;
+  width: 130px;
+  line-height: 18px;
+  padding: 4px 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sec-ui-button + .sec-ui-button {
+  margin-left: 10px;
+}
+
+.sec-ui-button:hover {
+  background-color: #ededed;
+}
+
+.sec-ui-button:active {
+  background-color: #ddd;
+}
+
+.sec-ui-button:focus {
+  outline: none;
+}
+
+.sec-ui-button.sec-ui-button-primary {
+  background-color: #61a4e4;
+  color: #fff;
+}
+
+.sec-ui-button.sec-ui-button-primary:hover {
+  background-color: #4795e0;
+}
+
+.sec-ui-button.sec-ui-button-primary:active {
+  background-color: #2d86db;
+}
