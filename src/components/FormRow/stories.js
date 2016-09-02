@@ -38,7 +38,12 @@ storiesOf('FormRow', module)
     </FormRow>
   ))
   .add('custom styles', () => (
-    <FormRow label="Name" style={{ border: 'dashed 3px green', borderRadius: '15px' }}>
+    <FormRow
+      label="Name"
+      style={{ border: 'dashed 3px green', borderRadius: '15px' }}
+      labelStyle={{ textAlign: 'left', marginLeft: '30px', textTransform: 'uppercase' }}
+      fieldStyle={{ transform: 'scale(0.8)' }}
+    >
       <TextBox />
     </FormRow>
   ))

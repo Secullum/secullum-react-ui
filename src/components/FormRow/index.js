@@ -7,17 +7,21 @@ const FormRow = ({
   renderLabel,
   className,
   style,
+  labelClassName,
+  labelStyle,
+  fieldClassName,
+  fieldStyle,
   required,
   errorMessage,
   children
 }) => (
   <div className={classNames(className, 'sec-ui-form-row')} style={style}>
-    <div className="sec-ui-form-row-label">
+    <div className={classNames(labelClassName, 'sec-ui-form-row-label')} style={labelStyle}>
       {renderLabel ? renderLabel() : (
         <label>{label}</label>
       )}
     </div>
-    <div className="sec-ui-form-row-field">
+    <div className={classNames(fieldClassName, 'sec-ui-form-row-field')} style={fieldStyle}>
       {required && <span className="sec-ui-form-row-field-required">*</span>}
       {children}
     </div>
@@ -36,6 +40,10 @@ FormRow.propTypes = {
   renderLabel: PropTypes.func,
   className: PropTypes.string,
   style: PropTypes.object,
+  labelClassName: PropTypes.string,
+  labelStyle: PropTypes.object,
+  fieldClassName: PropTypes.string,
+  fieldStyle: PropTypes.object,
   required: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string,
   children: PropTypes.any
