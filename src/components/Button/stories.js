@@ -9,6 +9,9 @@ storiesOf('Button', module)
   .add('primary', () => (
     <Button onClick={action('primary clicked')} primary>Primary</Button>
   ))
+  .add('disabled', () => (
+    <Button onClick={action('disabled clicked')} disabled>Disabled</Button>
+  ))
   .add('two buttons', () => (
     <div>
       <Button onClick={action('primary clicked')} primary>Primary</Button>

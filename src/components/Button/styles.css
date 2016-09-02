@@ -26,6 +26,11 @@
   outline: none;
 }
 
+.sec-ui-button.sec-ui-button-disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
 .sec-ui-button.sec-ui-button-primary {
   background-color: #61a4e4;
   color: #fff;

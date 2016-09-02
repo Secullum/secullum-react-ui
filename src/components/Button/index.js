@@ -8,6 +8,7 @@ const Button = ({
   type,
   className,
   style,
+  disabled,
   primary,
   onClick
 }) => (
@@ -17,9 +18,11 @@ const Button = ({
     className={classNames(
       className,
       'sec-ui-button',
+      { 'sec-ui-button-disabled': disabled },
       { 'sec-ui-button-primary': primary }
     )}
     style={style}
+    disabled={disabled}
     onClick={onClick}
   >
     {children}
@@ -28,6 +31,7 @@ const Button = ({
 
 Button.defaultProps = {
   type: 'button',
+  disabled: false,
   primary: false
 };
 
@@ -37,6 +41,7 @@ Button.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string,
   style: PropTypes.object,
+  disabled: PropTypes.bool.isRequired,
   primary: PropTypes.bool.isRequired,
   onClick: PropTypes.func
 };
