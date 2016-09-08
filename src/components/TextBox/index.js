@@ -10,6 +10,7 @@ const TextBox = ({
   type,
   className,
   style,
+  readOnly,
   error,
   onChange,
   onBlur
@@ -23,9 +24,11 @@ const TextBox = ({
     className={classNames(
       className,
       'sec-ui-text-box',
-      { 'sec-ui-text-box-error': error }
+      { 'sec-ui-text-box-error': error },
+      { 'sec-ui-text-box-readonly': readOnly }
     )}
     style={style}
+    readOnly={readOnly}
     onChange={onChange}
     onBlur={onBlur}
   />
@@ -33,7 +36,8 @@ const TextBox = ({
 
 TextBox.defaultProps = {
   type: 'text',
-  error: false
+  error: false,
+  readOnly: false
 };
 
 TextBox.propTypes = {
@@ -44,6 +48,7 @@ TextBox.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string,
   style: PropTypes.object,
+  readOnly: PropTypes.bool.isRequired,
   error: PropTypes.bool.isRequired,
   onChange: PropTypes.func,
   onBlur: PropTypes.func

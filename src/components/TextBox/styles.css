@@ -16,3 +16,8 @@
 .sec-ui-text-box.sec-ui-text-box-error {
   border: solid 1px #e48c85;
 }
+
+.sec-ui-text-box.sec-ui-text-box-readonly {
+  background-color: #ddd;
+  border: solid 1px #cacaca;
+}
