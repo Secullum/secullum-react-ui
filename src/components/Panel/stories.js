@@ -37,7 +37,7 @@ storiesOf('Panel', module)
       title="User"
       icon="users"
       renderButtons={() => (
-        <div>
+        <div style={{ marginLeft: '160px' }}>
           <Button onClick={action('save click')} primary>Save</Button>
           <Button onClick={action('cancel click')}>Cancel</Button>
         </div>
