@@ -10,6 +10,7 @@ const TextBox = ({
   type,
   className,
   style,
+  maxLength,
   readOnly,
   error,
   inputRef,
@@ -29,6 +30,7 @@ const TextBox = ({
       { 'sec-ui-text-box-readonly': readOnly }
     )}
     style={style}
+    maxLength={maxLength}
     readOnly={readOnly}
     ref={inputRef}
     onChange={onChange}
@@ -50,6 +52,7 @@ TextBox.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string,
   style: PropTypes.object,
+  maxLength: PropTypes.number,
   readOnly: PropTypes.bool.isRequired,
   error: PropTypes.bool.isRequired,
   inputRef: PropTypes.func,

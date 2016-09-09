@@ -16,6 +16,11 @@ storiesOf('TextBox', module)
       onBlur={action('default value blur')}
     />
   ))
+  .add('max length', () => (
+    <TextBox
+      maxLength={5}
+    />
+  ))
   .add('read only', () => (
     <TextBox
       value="read only value..."
