@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "start": "start-storybook -p 9001 -c storybook",
-    "build": "cross-env NODE_ENV=production1 webpack",
+    "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint .",
     "clean": "rimraf dist"
   },
