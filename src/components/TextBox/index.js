@@ -12,6 +12,7 @@ const TextBox = ({
   style,
   readOnly,
   error,
+  inputRef,
   onChange,
   onBlur
 }) => (
@@ -29,6 +30,7 @@ const TextBox = ({
     )}
     style={style}
     readOnly={readOnly}
+    ref={inputRef}
     onChange={onChange}
     onBlur={onBlur}
   />
@@ -50,6 +52,7 @@ TextBox.propTypes = {
   style: PropTypes.object,
   readOnly: PropTypes.bool.isRequired,
   error: PropTypes.bool.isRequired,
+  inputRef: PropTypes.func,
   onChange: PropTypes.func,
   onBlur: PropTypes.func
 };

@@ -10,6 +10,7 @@ const Button = ({
   style,
   disabled,
   primary,
+  buttonRef,
   onClick
 }) => (
   <button
@@ -23,6 +24,7 @@ const Button = ({
     )}
     style={style}
     disabled={disabled}
+    ref={buttonRef}
     onClick={onClick}
   >
     {children}
@@ -43,6 +45,7 @@ Button.propTypes = {
   style: PropTypes.object,
   disabled: PropTypes.bool.isRequired,
   primary: PropTypes.bool.isRequired,
+  buttonRef: PropTypes.func,
   onClick: PropTypes.func
 };
 
