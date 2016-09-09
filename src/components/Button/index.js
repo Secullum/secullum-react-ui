@@ -6,6 +6,7 @@ const Button = ({
   id,
   children,
   type,
+  form,
   className,
   style,
   disabled,
@@ -16,6 +17,7 @@ const Button = ({
   <button
     id={id}
     type={type}
+    form={form}
     className={classNames(
       className,
       'sec-ui-button',
@@ -41,6 +43,7 @@ Button.propTypes = {
   id: PropTypes.string,
   children: PropTypes.any,
   type: PropTypes.string.isRequired,
+  form: PropTypes.string,
   className: PropTypes.string,
   style: PropTypes.object,
   disabled: PropTypes.bool.isRequired,
