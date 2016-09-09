@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "form-serialize": "^0.7.1"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.6.1",
