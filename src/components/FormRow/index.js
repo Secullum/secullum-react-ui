@@ -24,10 +24,10 @@ const FormRow = ({
     <div className={classNames(fieldClassName, 'sec-ui-form-row-field')} style={fieldStyle}>
       {required && <span className="sec-ui-form-row-field-required">*</span>}
       {children}
+      {errorMessage && <span className="sec-ui-form-row-error-message">
+        {errorMessage}
+      </span>}
     </div>
-    {errorMessage && <span className="sec-ui-form-row-error-message">
-      {errorMessage}
-    </span>}
   </div>
 );
 

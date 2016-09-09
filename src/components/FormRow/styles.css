@@ -24,9 +24,9 @@
 }
 
 .sec-ui-form-row-error-message {
+  position: absolute;
   color: #d44d24;
   display: block;
   font-size: 11px;
-  margin-left: 160px;
   margin-top: 2px;
 }
