@@ -1,0 +1,21 @@
+.sec-ui-spinner.fa {
+  font-size: 32px;
+}
+
+.sec-ui-spinner-container {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sec-ui-spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(51, 51, 51, 0.3);
+}
