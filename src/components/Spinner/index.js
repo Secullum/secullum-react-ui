@@ -1,12 +1,13 @@
 import React from 'react';
+import Overlay from '../Overlay';
 import './styles.css';
 
 const Spinner = () => (
-  <div className="sec-ui-spinner-overlay">
+  <Overlay>
     <div className="sec-ui-spinner-container">
       <i className="fa fa-spinner fa-spin sec-ui-spinner" />
     </div>
-  </div>
+  </Overlay>
 );
 
 export default Spinner;
