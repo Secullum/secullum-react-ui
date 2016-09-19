@@ -1,6 +1,6 @@
 {
   "name": "secullum-react-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Set of React components for building user interfaces",
   "main": "dist/bundle.js",
   "files": [
