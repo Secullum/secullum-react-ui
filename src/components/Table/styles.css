@@ -1,0 +1,49 @@
+.sec-ui-table-container {
+  border: 1px solid #cacaca;
+}
+
+.sec-ui-table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.sec-ui-table th,
+.sec-ui-table td {
+  height: 38px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.sec-ui-table th:not(:first-child),
+.sec-ui-table td:not(:first-child) {
+  border-left: 1px solid #cacaca;
+}
+
+.sec-ui-table tbody td {
+  border-top: 1px solid #cacaca;
+}
+
+.sec-ui-table thead tr,
+.sec-ui-table tbody tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.sec-ui-table tbody tr:nth-child(odd) {
+  background-color: #fcfcfc;
+}
+
+.sec-ui-table tbody tr:hover {
+  background-color: #e5f3fb;
+}
+
+.sec-ui-table tbody tr.sec-ui-table-row-clickable:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sec-ui-table .sec-ui-table-selection-column {
+  text-align: center;
+  width: 60px;
+}
