@@ -6,6 +6,7 @@ const Button = ({
   id,
   children,
   type,
+  title,
   form,
   className,
   style,
@@ -17,6 +18,7 @@ const Button = ({
   <button
     id={id}
     type={type}
+    title={title}
     form={form}
     className={classNames(
       className,
@@ -43,6 +45,7 @@ Button.propTypes = {
   id: PropTypes.string,
   children: PropTypes.any,
   type: PropTypes.string.isRequired,
+  title: PropTypes.string,
   form: PropTypes.string,
   className: PropTypes.string,
   style: PropTypes.object,
