@@ -42,10 +42,24 @@ storiesOf('Table', module)
       onSelectionChange={action('selection changed')}
     />
   ))
+  .add('with scroll', () => (
+    <div>
+      <Table
+        columns={defaultColumns}
+        data={defaultData.slice(0, 3)}
+        style={{ height: '200px', marginBottom: '20px' }}
+      />
+      <Table
+        columns={defaultColumns}
+        data={defaultData}
+        style={{ height: '200px' }}
+      />
+    </div>
+  ))
   .add('custom styles', () => (
     <Table
       columns={defaultColumns}
       data={defaultData}
-      style={{ height: '200px', width: '400px', overflow: 'auto', border: 'solid 3px red' }}
+      style={{ height: '200px', width: '400px', border: 'solid 3px red' }}
     />
   ));

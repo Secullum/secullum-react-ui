@@ -1,5 +1,6 @@
 .sec-ui-table-container {
   border: 1px solid #cacaca;
+  overflow: auto;
 }
 
 .sec-ui-table {
@@ -23,6 +24,10 @@
 
 .sec-ui-table tbody td {
   border-top: 1px solid #cacaca;
+}
+
+.sec-ui-table tbody.sec-ui-table-render-last-row-border tr:last-child td {
+  border-bottom: 1px solid #cacaca;
 }
 
 .sec-ui-table thead tr,
