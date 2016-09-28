@@ -67,7 +67,10 @@ class Table extends Component {
         style={style}
         ref={ref => this.container = ref}
       >
-        <table className="sec-ui-table" ref={ref => this.table = ref}>
+        <table
+          className={classNames('sec-ui-table', { 'sec-ui-table-render-last-row-border': this.state.shouldRenderLastRowBorder })}
+          ref={ref => this.table = ref}
+        >
           <thead>
             <tr>
               {selection != null && (
@@ -82,7 +85,7 @@ class Table extends Component {
               ))}
             </tr>
           </thead>
-          <tbody className={classNames({ 'sec-ui-table-render-last-row-border': this.state.shouldRenderLastRowBorder })}>
+          <tbody>
             {data.map(row => (
               <tr
                 key={row[idAttribute]}

@@ -42,6 +42,12 @@ storiesOf('Table', module)
       onSelectionChange={action('selection changed')}
     />
   ))
+  .add('empty', () => (
+    <Table
+      columns={defaultColumns}
+      data={[]}
+    />
+  ))
   .add('with scroll', () => (
     <div>
       <Table
