@@ -57,6 +57,11 @@ storiesOf('Table', module)
       />
       <Table
         columns={defaultColumns}
+        data={defaultData.slice(0, 3)}
+        style={{ height: '154px', marginBottom: '20px' }}
+      />
+      <Table
+        columns={defaultColumns}
         data={defaultData}
         style={{ height: '200px' }}
       />

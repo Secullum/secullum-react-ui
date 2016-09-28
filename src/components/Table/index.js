@@ -27,14 +27,31 @@ class Table extends Component {
   };
 
   componentDidMount() {
+    this.checkRenderLastRowBorder();
+  }
+
+  componentDidUpdate() {
+    this.checkRenderLastRowBorder();
+  }
+
+  checkRenderLastRowBorder = () => {
     const containerRect = this.container.getBoundingClientRect();
     const tableRect = this.table.getBoundingClientRect();
 
-    // subtract 2 because of borders
-    if ((containerRect.height - 2) > tableRect.height) {
-      this.setState({ shouldRenderLastRowBorder: true });
+    // subtract 2 because of container borders
+    let borders = 2;
+
+    // subtract 1 more because of last row border
+    if (this.state.shouldRenderLastRowBorder) {
+      borders++;
     }
-  }
+
+    const shouldRenderLastRowBorder = (containerRect.height - borders) > tableRect.height;
+
+    if (this.state.shouldRenderLastRowBorder !== shouldRenderLastRowBorder) {
+      this.setState({ shouldRenderLastRowBorder });
+    }
+  };
 
   handleSelectAllChange = e => {
     const { data, idAttribute, onSelectionChange } = this.props;
