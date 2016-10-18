@@ -1,0 +1,15 @@
+.sec-ui-list {
+  border: solid 1px #cacaca;
+  display: inline-block;
+  overflow: auto;
+}
+
+.sec-ui-list-option {
+  cursor: default;
+  padding: 3px 10px;
+}
+
+.sec-ui-list-option-selected {
+  color: #fff;
+  background-color: #1e90ff;
+}
