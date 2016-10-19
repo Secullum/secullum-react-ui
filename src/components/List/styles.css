@@ -12,6 +12,7 @@
 .sec-ui-list-option {
   cursor: default;
   padding: 3px 10px;
+  user-select: none;
 }
 
 .sec-ui-list-option-selected {

@@ -18,7 +18,8 @@ class List extends Component {
     descriptionKey: PropTypes.string.isRequired,
     className: PropTypes.string,
     style: PropTypes.object,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
+    onDoubleClick: PropTypes.func.isRequired
   };
 
   handleKeyDown = e => {
@@ -60,6 +61,11 @@ class List extends Component {
         )}
         onClick={() => {
           this.props.onChange(value);
+        }}
+        onDoubleClick={() => {
+          if (this.props.onDoubleClick) {
+            this.props.onDoubleClick(value);
+          }
         }}
       >
         {description}
