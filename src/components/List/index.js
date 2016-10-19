@@ -47,7 +47,7 @@ class List extends Component {
 
     this.props.onChange(options[selectedIndex][valueKey]);
   };
- 
+
   renderOption = option => {
     const value = option[this.props.valueKey];
     const description = option[this.props.descriptionKey];
