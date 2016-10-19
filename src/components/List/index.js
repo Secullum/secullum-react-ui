@@ -26,6 +26,8 @@ class List extends Component {
       return;
     }
 
+    e.preventDefault();
+
     const { options, valueKey, value } = this.props;
 
     let selectedIndex = options.findIndex(option => option[valueKey] === value);
