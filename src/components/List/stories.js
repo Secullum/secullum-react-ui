@@ -21,6 +21,7 @@ storiesOf('List', module)
       options={options}
       value={2}
       onChange={action('default changed')}
+      onDoubleClick={action('default double click')}
     />
   ))
   .add('with scroll', () => (
@@ -29,6 +30,7 @@ storiesOf('List', module)
       value={3}
       style={{ height: '120px' }}
       onChange={action('with scroll changed')}
+      onDoubleClick={action('with scroll double click')}
     />
   ))
   .add('custom styles', () => (
@@ -37,5 +39,6 @@ storiesOf('List', module)
       value={6}
       style={{ width: '200px', border: 'solid 3px blue', borderRadius: '10px' }}
       onChange={action('custom styles changed')}
+      onDoubleClick={action('custom styles double click')}
     />
   ));
