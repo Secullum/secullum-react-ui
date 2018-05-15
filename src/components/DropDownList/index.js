@@ -11,6 +11,7 @@ const DropDownList = ({
   textKey,
   valueKey,
   className,
+  disabled,
   style,
   error,
   onChange
@@ -20,9 +21,11 @@ const DropDownList = ({
     name={name}
     value={value}
     defaultValue={defaultValue}
+    disabled={disabled}
     className={classNames(
       className,
       'sec-ui-drop-down-list',
+      { 'sec-ui-drop-down-disabled': disabled },
       { 'sec-ui-drop-down-list-error': error }
     )}
     style={style}
@@ -37,7 +40,8 @@ const DropDownList = ({
 );
 
 DropDownList.defaultProps = {
-  error: false
+  error: false,
+  disabled: false
 };
 
 DropDownList.propTypes = {
@@ -54,7 +58,8 @@ DropDownList.propTypes = {
   className: PropTypes.string,
   style: PropTypes.object,
   error: PropTypes.bool.isRequired,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  disabled: PropTypes.bool.isRequired
 };
 
 export default DropDownList;
