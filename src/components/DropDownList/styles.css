@@ -13,6 +13,11 @@
   outline: none;
 }
 
+.sec-ui-drop-down-list.sec-ui-drop-down-disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
 .sec-ui-drop-down-list.sec-ui-drop-down-list-error {
   border: solid 1px #e48c85;
 }
