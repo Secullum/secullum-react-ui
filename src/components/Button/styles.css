@@ -1,7 +1,7 @@
 .sec-ui-button {
   background-color: #fcfcfc;
   border: solid 1px #cacaca;
-  color: #333;
+  color: #555;
   height: 40px;
   width: 130px;
   line-height: 18px;
@@ -32,14 +32,10 @@
 }
 
 .sec-ui-button.sec-ui-button-primary {
-  background-color: #61a4e4;
+  background-color: #59cbe8;
   color: #fff;
 }
 
 .sec-ui-button.sec-ui-button-primary:hover {
-  background-color: #4795e0;
-}
-
-.sec-ui-button.sec-ui-button-primary:active {
-  background-color: #2d86db;
+  background-color: #3ec3e4;
 }

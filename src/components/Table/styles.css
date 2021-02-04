@@ -39,7 +39,7 @@
 
 .sec-ui-table thead tr,
 .sec-ui-table tbody tr:nth-child(even) {
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
 }
 
 .sec-ui-table tbody tr:nth-child(odd) {
@@ -47,7 +47,7 @@
 }
 
 .sec-ui-table tbody tr:hover {
-  background-color: #e5f3fb;
+  background-color: #d9f8ff;
 }
 
 .sec-ui-table tbody tr.sec-ui-table-row-clickable:hover {
